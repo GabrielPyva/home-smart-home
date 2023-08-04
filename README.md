@@ -1,4 +1,4 @@
-# home-smart-home
+# Home Smart Home
 
 A personal project to make some routines automatic at my home.
 
