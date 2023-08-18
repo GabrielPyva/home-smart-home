@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, StatusBar, SafeAreaView } from 'react-native';
+
+import Devices from './src/screens/Devices';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>SEU LIXO!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.background}>
+      <StatusBar />
+      <Devices />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  background: {
+    backgroundColor: "#202020",
+  }
+})
