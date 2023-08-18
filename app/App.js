@@ -1,6 +1,6 @@
 import { StyleSheet, StatusBar, SafeAreaView } from 'react-native';
 
-import Devices from './src/screens/Devices';
+import Devices from './src/screens/devices';
 
 export default function App() {
   return (
