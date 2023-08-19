@@ -7,25 +7,19 @@ const width = Dimensions.get('screen').width;
 
 export default function Devices() {
    return <>
-   <Image source={choque} style={styles.choque}/>
-   <Text style={styles.title}>Automação Braba</Text>
+   <Text style={styles.title}>Meu quarto</Text>
 
-   <View>
+   <View style={styles.devices}>
       <Text style={styles.text}>Meus trambolhos</Text>
    </View>
    </>
 }
 
 const styles = StyleSheet.create({
-   choque: {
-     width: "100%",
-     height: width,
-   },
    title: {
       width: "100%",
-      position: "absolute",
       textAlign: "center",
-      fontSize: 16,
+      fontSize: 26,
       lineHeight: 26,
       color: "white",
       fontWeight: "bold",
@@ -33,5 +27,10 @@ const styles = StyleSheet.create({
    },
    text: {
       color: "white",
-   }
+   },
+   devices: {
+      paddingHorizontal: 8,
+      paddingVertical: 16,
+      backgroundColor: "#45a9d9"
+   },
 })
